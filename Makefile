@@ -1,6 +1,5 @@
 MU = mustache
 INOTIFY = inotifywait
-
 BUSYBOX = $(shell busybox --list | grep "httpd" >/dev/null 2>&1 && echo busybox || echo busybox-extras)
 
 PUBLIC = ./public
