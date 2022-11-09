@@ -1,0 +1,15 @@
+name: Example for basic usage
+on:
+  push
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: recih/template-render-action@v1
+        id: template
+        with:
+          engine: mustache
+          template-file: ./template-index.html
+          vars: hash.json
+          output-file: public/index.html

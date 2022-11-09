@@ -1,0 +1,56 @@
+.section {
+    color: #6d9cca;
+}
+
+.job-header {
+    padding-top: 0.5em;
+    padding-bottom: 0;
+}
+
+.job-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.job-footer {
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+.job-dates {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 30%;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.job-title {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.job-description {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+tr.no-border td {
+    border: none;
+}
+
+.badge {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
