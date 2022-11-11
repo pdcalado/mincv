@@ -18,7 +18,7 @@ jobs:
           output-file: public/index.html
       - id: release_archive
         name: Create release archive
-        run: tar czf release.tar.gz ./public
+        run: tar -C ./public -czf ./release.tar.gz .
       - name: Bump version and push tag
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.1
