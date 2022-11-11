@@ -14,8 +14,8 @@ jobs:
         with:
           engine: mustache
           template-file: ./template-index.html
-          vars: hash.json
-          output-file: public/index.html
+          vars: ./hash.json
+          output-file: .7public/index.html
       - id: release_archive
         name: Create release archive
         run: tar -C ./public -czf ./release.tar.gz .
