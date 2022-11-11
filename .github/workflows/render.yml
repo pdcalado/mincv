@@ -16,7 +16,7 @@ jobs:
           template-file: ./template-index.html
           vars: hash.json
           output-file: public/index.html
-      - id: release archive
+      - id: release_archive
         name: Create release archive
         run: tar czf release.tar.gz ./public
       - name: Bump version and push tag
