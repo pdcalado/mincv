@@ -15,7 +15,7 @@ jobs:
           engine: mustache
           template-file: ./template-index.html
           vars: |
-            { "disclaimer": "foobar" }
+            hash.json
           output-file: ./public/index.html
       - id: release_archive
         name: Create release archive
