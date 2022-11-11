@@ -12,7 +12,7 @@ jobs:
         name: Render html using mustache
         uses: recih/template-render-action@v1
         with:
-          engine: mustache
+          # engine: mustache
           template-file: ./template-index.html
           vars: ./hash.json
           output-file: ./public/index.html
