@@ -8,19 +8,15 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - id: template
-        name: Render html using mustache
-        uses: recih/template-render-action@v1
+      - uses: addnab/docker-run-action@v3
         with:
-          engine: mustache
-          template-file: ./template-index.html
-          vars: hash.json
-          output-file: public/index.html
-      - id: release_archive
-        name: Create release archive
+          image: toolbelt/mustache
+          options: -v ${{ github.workspace }}:/work --user 0:0
+          run: |
+            cat /work/hash.json | mustache - /work/template-index.html > /work/public/index.html
+      - name: Create release archive
         run: tar -C ./public -czf ./release.tar.gz .
       - name: Bump version and push tag
-        id: tag_version
         uses: mathieudutour/github-tag-action@v6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
