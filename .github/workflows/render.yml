@@ -11,9 +11,9 @@ jobs:
       - uses: addnab/docker-run-action@v3
         with:
           image: toolbelt/mustache
-          #options: -v ${{ github.workspace }}:/work
+          options: -v ${{ github.workspace }}:/work
           run: |
-            cat /github/workspace/hash.json | mustache - /github/workspace/template-index.html > /github/workspace/public/index.html
+            cat /work/hash.json | mustache - /work/template-index.html > /work/public/index.html
       # - id: template
       #   name: Render html using mustache
       #   uses: docker://toolbelt/mustache
