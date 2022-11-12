@@ -1,6 +1,8 @@
 name: Render html
 on:
-  push
+  push:
+    branches:
+      - main
 
 jobs:
   render:
@@ -16,7 +18,8 @@ jobs:
             cat /work/hash.json | mustache - /work/template-index.html > /work/public/index.html
       - name: Create release archive
         run: tar -C ./public -czf ./release.tar.gz .
-      - name: Bump version and push tag
+      - id: tag_version
+        name: Bump version and push tag
         uses: mathieudutour/github-tag-action@v6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
