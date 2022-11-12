@@ -8,15 +8,22 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - id: template
-        name: Render html using mustache
-        uses: recih/template-render-action@v1
+      - uses: addnab/docker-run-action@v3
         with:
-          engine: mustache
-          template-file: ./template-index.html
-          vars: |
-            hash.json
-          output-file: ./public/index.html
+          image: toolbelt/mustache
+          options: -v ${{ github.workspace }}:/work
+          run: |
+            cat /work/hash.json | mustache - /work/template-index.html > /work/public/index.html
+      # - id: template
+      #   name: Render html using mustache
+      #   uses: docker://toolbelt/mustache
+      #   run: 
+        # uses: recih/template-render-action@v1
+        # with:
+        #   engine: mustache
+        #   template-file: ./template-index.html
+        #   vars: "./hash.json"
+        #   output-file: ./public/index.html
       - id: release_archive
         name: Create release archive
         run: tar -C ./public -czf ./release.tar.gz .
