@@ -54,3 +54,13 @@ tr.no-border td {
     border-radius: 5px;
     font-size: 0.8em;
 }
+
+.footer {
+    margin-top: 3.0em;
+}
+
+.fineprint {
+    text-align: center;
+    font-size: 0.6em;
+    margin-bottom: 1.0em;
+}

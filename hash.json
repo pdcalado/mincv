@@ -16,10 +16,10 @@
             "tags": ["Go", "AWS", "Terraform"]
         },
         {
-            "title": "Senior Consultant",
+            "title": "Software Consultant",
             "dates": "Jan to Oct 2020",
             "company_name": "METRIC4",
-            "description": "Main developer of backend services and infrastructure management. Worked for different companies such as EVOOQ and Hardah Group.",
+            "description": "Main developer of backend services and infrastructure management. Worked for different foreign companies.",
             "tags": ["Rust", "AWS", "Kubernetes", "Terraform"]
         },
         {
@@ -30,14 +30,14 @@
             "tags": ["Go", "Rust", "Python"]
         },
         {
-            "title": "Senior developer and Product Manager",
+            "title": "Senior Developer and Product Manager",
             "dates": "May 2015 to Nov 2017",
             "company_name": "Movvo Inc",
             "description": "Senior developer of backend services and sensor firmware. Product manager bridging customer's expectations and tech development.",
             "tags": ["Go", "C", "Python"]
         },
         {
-            "title": "Researcher and software developer",
+            "title": "Researcher and Software Developer",
             "dates": "Sep 2009 to Apr 2015",
             "company_name": "LSTS at FEUP",
             "description": "Research engineer and software developer.",
@@ -75,6 +75,16 @@
             "link": "https://github.com/LSTS/dune",
             "repo": "DUNE",
             "tags": ["C", "C++"]
+        },
+        {
+            "before": "This very website",
+            "link": "https://github.com/pdcalado/mincv.git",
+            "repo": "pdcalado/mincv",
+            "tags": ["HTML", "CSS"]
         }
+    ],
+    "footer": [
+        "This website does not use cookies or gather any data from its visitors.",
+        "© 2022 Pedro Calado - all rights reserved"
     ]
 }
