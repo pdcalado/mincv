@@ -65,6 +65,12 @@
             "tags": ["Rust"]
         },
         {
+            "before": "Heavy contributor to",
+            "link": "https://gitlab.com/pedrocalado/mrbig",
+            "repo": "mrbig",
+            "tags": ["Rust"]
+        },
+        {
             "before": "Contribution to",
             "link": "https://github.com/valpackett/systemstat/pull/46",
             "repo": "valpackett/systemstat",
