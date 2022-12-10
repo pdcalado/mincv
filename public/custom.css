@@ -15,6 +15,7 @@
 .job-footer {
     padding-top: 0;
     padding-bottom: 1em;
+    margin: 0;
 }
 
 .job-dates {
@@ -63,4 +64,51 @@ tr.no-border td {
     text-align: center;
     font-size: 0.6em;
     margin-bottom: 1.0em;
+}
+
+.check-tog {
+    display: none;
+}
+
+.label-tog {
+    display: inline;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.label-less {
+    display: none;
+}
+
+[id^=tog], #content {
+    font-size: 0;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 1s;
+    transition: opacity 1s;
+}
+
+[id^=tog]:checked ~ #content {
+    font-size: inherit;
+    max-height: 100vh;
+    opacity: 1;
+    visibility: visible;
+}
+
+[id^=tog]:checked ~ .label-tog .label-more {
+    display: none;
+}
+
+[id^=tog]:checked ~ .label-tog .label-less {
+    display: inherit;
+}
+
+[id^=tog] ~ #content br {
+    display: none;
+}
+
+[id^=tog]:checked ~ #content br {
+    display: inherit;
 }

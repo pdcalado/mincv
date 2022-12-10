@@ -25,6 +25,10 @@
     <p>{{.}}</p>
     {{/whoami}}
 
+    <!-- <label for="tog">Toggle</label>
+    <input type="checkbox" id="tog"/> -->
+    <!-- <div id="content">TEXT</div> -->
+
     <h3 class="section">Career</h3>
     <table>
       <tbody>
@@ -41,7 +45,17 @@
           <td class="job-body" colspan="2">
             <span class="company-name">{{company_name}}</span>{{#company_detail}}
             <small>{{company_detail}}</small>{{/company_detail}}
-            <p class="job-description">{{description}}</p>
+            <p class="job-description">
+              {{description}}
+              {{#extra}}
+              <input type="checkbox" class="check-tog" id="tog-{{id}}"/>
+              <label class="label-tog" for="tog-{{id}}">
+                <span class="label-more"> (more)</span>
+                <span class="label-less"> (less)</span>
+              </label>
+              <span id="content"><br>{{extra}}</span>
+              {{/extra}}
+            </p>
           </td>
         </tr>
         {{#tags.length}}

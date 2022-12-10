@@ -8,42 +8,53 @@
     ],
     "experience": [
         {
+            "id": 1,
             "title": "Tech Lead",
             "dates": "Since Nov 2020",
             "company_name": "Worten",
             "company_detail": "(METRIC4 consultant)",
             "description": "Tech leading a team of 12. Designed and implemented solutions for order orchestration and shopping cart rules. Streamlined team's development process while deploying to production multiple times per week.",
+            "extra": "Created a system processing 100's of thousands of order updates per day using mostly Kafka and PostgreSQL. Steered the team with continuous deployment methodology averaging over 2 releases per day (including hot-fixes) over the last two years.",
             "tags": ["Go", "AWS", "Terraform"]
         },
         {
+            "id": 2,
             "title": "Software Consultant",
             "dates": "Jan to Oct 2020",
             "company_name": "METRIC4",
             "description": "Main developer of backend services and infrastructure management. Worked for different foreign companies.",
+            "extra": "Contributed to a Rust microservices framework used to deploy services in a Kubernetes cluster. Communicated among services using gRPC and controlled ingress using Istio. Used a custom DSL to generate database schema and GraphQL queries / mutations. Provisioned everything using terraform. The app served as a warehouse management solution.",
             "tags": ["Rust", "AWS", "Kubernetes", "Terraform"]
         },
         {
+            "id": 3,
             "title": "Product Developer and Founder",
             "dates": "Nov 2017 to Dec 2019",
             "company_name": "METRIC4",
             "description": "Backend services and sensor firmware developer.",
+            "extra": "Developed a threads and messages middleware (in Rust) to run on low end hardware with intermittent connectivity. Wrote drivers for several peripherals, tools for logging and monitoring, self updated, still running today. Wrote services in Go for data ingestion, monitoring, user notifications, realtime feeds, KPI batch processes and metadata APIs. Was also involved in provisioning the infrastructure using terraform. Invested heavily in CI/CD and fostered code reviews. Having never done it before, developed a frontend client facing application in Typescript using React.",
             "tags": ["Go", "Rust", "Python"]
         },
         {
+            "id": 4,
             "title": "Senior Developer and Product Manager",
             "dates": "May 2015 to Nov 2017",
             "company_name": "Movvo Inc",
             "description": "Senior developer of backend services and sensor firmware. Product manager bridging customer's expectations and tech development.",
+            "extra": "Translated a cloud solution ingesting millions of messages per day, from Python to Go. Exploited Go's concurrency patterns and zeroMQ to load, transport and store large amounts of data. Built a KPI pipeline for batch processing to support our Data Science team, in Go and Python. Led the development of sensor firmware in C for a MIPS CPU.",
             "tags": ["Go", "C", "Python"]
         },
         {
+            "id": 5,
             "title": "Researcher and Software Developer",
             "dates": "Sep 2009 to Apr 2015",
             "company_name": "LSTS at FEUP",
             "description": "Research engineer and software developer.",
+            "extra": "Among top 3 contributors to DUNE, in C++. Responsible for control and maneuvering tasks of an Autonomous Underwater Vehicle. Wrote peripheral drivers, implemented guidance algorithms, monitoring and coulomb counting. Main developer of an ATxmega based system, in C language. Wrote drivers for GSM modem, Bluetooth, GPS and other peripherals.",
             "tags": ["C++", "C"]
         },
         {
+            "id": 6,
             "title": "Student",
             "dates": "2004 to 2009",
             "company_name": "FEUP, Porto, Portugal",
