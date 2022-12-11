@@ -31,12 +31,14 @@
     padding-bottom: inherit;
     font-weight: bold;
     color: #ffffff;
+    text-align: left;
 }
 
 .job-description {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 0.8em;
+    text-align: left;
 }
 
 .company-name {
