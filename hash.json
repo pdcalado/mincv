@@ -8,17 +8,16 @@
     ],
     "experience": [
         {
-            "id": 1,
+            "id": "worten",
             "title": "Tech Lead",
             "dates": "Since Nov 2020",
             "company_name": "Worten",
-            "company_detail": "(METRIC4 consultant)",
             "description": "Tech leading a team of 12. Designed and implemented solutions for order orchestration and shopping cart rules. Streamlined team's development process while deploying to production multiple times per week.",
             "extra": "Created a system processing 100's of thousands of order updates per day using mostly Kafka and PostgreSQL. Steered the team with continuous deployment methodology averaging over 2 releases per day (including hot-fixes) over the last two years.",
             "tags": ["Go", "AWS", "Terraform"]
         },
         {
-            "id": 2,
+            "id": "metric4-consultant",
             "title": "Software Consultant",
             "dates": "Jan to Oct 2020",
             "company_name": "METRIC4",
@@ -27,8 +26,8 @@
             "tags": ["Rust", "AWS", "Kubernetes", "Terraform"]
         },
         {
-            "id": 3,
-            "title": "Product Developer and Founder",
+            "id": "metric4-founder",
+            "title": "Founder and Developer",
             "dates": "Nov 2017 to Dec 2019",
             "company_name": "METRIC4",
             "description": "Backend services and sensor firmware developer.",
@@ -36,7 +35,7 @@
             "tags": ["Go", "Rust", "Python"]
         },
         {
-            "id": 4,
+            "id": "movvo",
             "title": "Senior Developer and Product Manager",
             "dates": "May 2015 to Nov 2017",
             "company_name": "Movvo Inc",
@@ -45,7 +44,7 @@
             "tags": ["Go", "C", "Python"]
         },
         {
-            "id": 5,
+            "id": "lsts",
             "title": "Researcher and Software Developer",
             "dates": "Sep 2009 to Apr 2015",
             "company_name": "LSTS at FEUP",
@@ -54,7 +53,7 @@
             "tags": ["C++", "C"]
         },
         {
-            "id": 6,
+            "id": "masters",
             "title": "Student",
             "dates": "2004 to 2009",
             "company_name": "FEUP, Porto, Portugal",
