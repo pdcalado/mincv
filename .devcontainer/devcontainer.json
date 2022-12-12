@@ -6,7 +6,7 @@
 		"dockerfile": "Dockerfile"
 	},
 	
-	"forwardPorts": [8080],
+	"appPort": "8080:8080",
 
 	// Replace when using a ptrace-based debugger like C++, Go, and Rust
 	// "runArgs": [ "--init", "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
