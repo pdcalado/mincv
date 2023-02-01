@@ -84,6 +84,12 @@
             "tags": ["C", "C++"]
         },
         {
+            "before": "Pet project with entity relationship concepts:",
+            "link": "https://github.com/pdcalado/perry",
+            "repo": "pdcalado/perry",
+            "tags": ["Typescript", "Rust", "WASM"]
+        },
+        {
             "before": "This very website",
             "link": "https://github.com/pdcalado/mincv.git",
             "repo": "pdcalado/mincv",
@@ -92,6 +98,6 @@
     ],
     "footer": [
         "This website does not use cookies or gather any data from its visitors.",
-        "© 2022 Pedro Calado - all rights reserved"
+        "© 2023 Pedro Calado - all rights reserved"
     ]
 }
