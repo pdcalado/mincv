@@ -1,12 +1,18 @@
-name: Render html
+name: Build and Deploy
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
-  render:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -29,3 +35,10 @@ jobs:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           artifacts: release.tar.gz
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: dbf4b578e0652f97f2efe6a72ec622be
+          projectName: mincv
+          directory: ./public
