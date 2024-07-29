@@ -12,7 +12,7 @@
             "title": "Tech Lead",
             "dates": "Since Nov 2020",
             "company_name": "Worten",
-            "description": "Tech leading a team of 12. Designed and implemented solutions for order orchestration and shopping cart rules. Streamlined team's development process while deploying to production multiple times per week. Worten is part of Sonae group, which had over 7 Billion € turnover in 2021.",
+            "description": "Tech leading a team of 14. Designed and implemented solutions for order orchestration and shopping cart rules. Streamlined team's development process while deploying to production multiple times per week. Worten is part of Sonae group, which had 8.4 Billion € turnover in 2023.",
             "extra": "Created a system processing 100's of thousands of order updates per day using mostly Kafka and PostgreSQL. Steered the team with continuous deployment methodology averaging over 2 releases per day (including hot-fixes) over the last two years.",
             "tags": ["Go", "AWS", "Terraform"]
         },
